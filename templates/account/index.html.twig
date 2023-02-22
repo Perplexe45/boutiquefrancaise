@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte - La boutique française{% endblock %}
+
+{% block content %}
+    <h1>Mon compte</h1>
+    {# {{ dump(app.User.firstname) }} //Permet de récupérer l'info de l'utilisateur grace à l'objet "app" #}
+    Bienvenue {{ app.User.firstname }} dans votre compte.<br> C'est dans cet espace que vous allez pouvoir gérer toutes 
+    vos infrmations personnelles.
+    <hr>
+    - Modifier mon mot de passe <br/>
+    - Ajouter me adresses <br/>
+    - Mes commandes <br/>
+    <hr>
+
+
+         
+
+{% endblock %}
