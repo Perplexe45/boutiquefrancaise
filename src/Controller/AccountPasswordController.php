@@ -38,7 +38,7 @@ class AccountPasswordController extends AbstractController
                 $password = $encoder->hashPassword($user, $new_pwd); //encodage du nouveau password
                 //dd($password); --> ok, ça fonctionne
 
-                $user->setPassword($password); //Erreur symfony, mais la midif du password est ok !... 
+                $user->setPassword($password); //Erreur symfony, mais la modif du password est ok !... 
                 $this->entityManager->flush(); //Modif dans l'entité.
 
                 // Ajout d'un message pour indiquer que le mot de passe a été modifié avec succès
