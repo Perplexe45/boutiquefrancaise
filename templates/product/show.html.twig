@@ -19,7 +19,8 @@
 			<p>
 				{{ product.description }}
 			</p>
-			<a href="" class="btn btn-primary">Ajouter au panier</a>
+			{# Si clic sur "Ajouter au panier" --> route:"add_to_cart" avec l'ajout de l'id fu produit en paramétre#}
+			<a href="{{path('add_to_cart',{'id':product.id})}}" class="btn btn-primary">Ajouter au panier</a>
 			<hr>
 
 			</div>

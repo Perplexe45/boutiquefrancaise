@@ -5,11 +5,11 @@
 {% block content %}
     <h1>Mon compte</h1>
     {# {{ dump(app.User.firstname) }} //Permet de récupérer l'info de l'utilisateur grace à l'objet "app" #}
-    Bienvenue {{ app.User.firstname }} dans votre compte.<br> C'est dans cet espace que vous allez pouvoir gérer toutes 
-    vos infrmations personnelles.
+    Bienvenue {{ app.User.firstname }} dans votre compte.<br> 
+    C'est dans cet espace que vous allez pouvoir gérer toutes vos infrmations personnelles.
     <hr>
     - <a href="{{path('account_password')}}"> Modifier mon mot de passe </a><br/>
-    - Ajouter me adresses <br/>
+    - <a href="{{path('account_address')}}"> Gérer mes adresses </a><br/>
     - Mes commandes <br/>
     <hr>
 

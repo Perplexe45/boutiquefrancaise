@@ -54,11 +54,14 @@
             </ul>
             <div class="navbar-item-custom">
                 {% if app.user %} {# Si l'utilisateur est connecté #}
-                    <a href="{{ path('app_account') }}">Mon compte <small> ({{ app.user.firstname }})</small></a> <span> | </span> <a href="{{ path('app_logout') }}">Déconnexion</a> 
+                    <a href="{{ path('account') }}">Mon compte <small> ({{ app.user.firstname }})</small></a> <span> | </span> <a href="{{ path('app_logout') }}">Déconnexion</a> 
                 {% else %}  {# Pas Connecté #}
                     <a href="{{ path('app_login') }}">Connexion</a> <span> | </span> <a href="{{ path('app_register') }}">Inscription</a> 
                 {% endif %}
             </div>
+            <a href="{{ path('cart') }}">
+                <img src="{{ asset('assets/img/shopping-cart.png') }}" class="cart-icon" alt="Mon panier">
+            </a>
             
             
         </div>
